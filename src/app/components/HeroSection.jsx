@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { TypeAnimation } from 'react-type-animation';
+
 
 const HeroSection = () => {
     return (
@@ -7,13 +10,31 @@ const HeroSection = () => {
             <div className='grid grid-cols-1 sm:grid-cols-12'>
                 <div className='col-span-7 place-self-center sm:mr-3 text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
-                        Hey! I'm James
+                        <span className='text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-orange-600'>
+                            Hello, I'm{" "}
+                        </span>
+                        <TypeAnimation
+                            sequence={[
+                                'James',
+                                1000,
+                                'A Web Developer',
+                                1000,
+                                'A Full-Stack Software Engineer',
+                                1000,
+                                '',
+                                1000
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            repeat={Infinity}
+                        />
+
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur fugiat perspiciatis iste ullam, sint magnam minus praesentium
+                        I'm a software developer experienced in architecting scalable, cutting-edge web solutions
                     </p>
                     <div>
-                        <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>Contact</button>
+                        <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-300 to-orange-600 text-white'>Contact</button>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border mt-3 border-white'>Download Resume</button>
                     </div>
                 </div>
