@@ -11,7 +11,7 @@ const HeroSection = () => {
                 <div className='col-span-7 place-self-center sm:mr-3 text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-orange-600'>
-                            Hello, I'm{" "}
+                            Hello, I&apos;m{" "}
                         </span>
                         <TypeAnimation
                             sequence={[
@@ -31,7 +31,7 @@ const HeroSection = () => {
 
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
-                        I'm a software developer experienced in architecting scalable, cutting-edge web solutions
+                        I&apos;m a software developer experienced in architecting scalable, cutting-edge web solutions
                     </p>
                     <div>
                         <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-300 to-orange-600 text-white'>Contact</button>
