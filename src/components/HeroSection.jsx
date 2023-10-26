@@ -6,20 +6,22 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section>
-            <div className='grid grid-cols-1 sm:grid-cols-12'>
-                <div className='col-span-7 place-self-center sm:mr-3 text-center sm:text-left'>
+        <div className=''>
+            <div className='grid grid-cols-1 md:grid-cols-12 pb-10'>
+                <div className='col-span-8 place-self-center sm:mr-3 text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
-                        <span className='text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-orange-600'>
-                            Hello, I&apos;m{" "}
+                        <span className='text-transparent mb-5 bg-clip-text bg-gradient-to-br from-blue-300 to-orange-600'>
+                            Hey, I&apos;m James!
                         </span>
+                    </h1>
+                    <div className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
                         <TypeAnimation
                             sequence={[
-                                'James',
+                                'Full-Stack Web Developer',
                                 1000,
-                                'A Web Developer',
+                                'Graphic Designer',
                                 1000,
-                                'A Full-Stack Software Engineer',
+                                'Software Engineer',
                                 1000,
                                 '',
                                 1000
@@ -28,17 +30,20 @@ const HeroSection = () => {
                             speed={50}
                             repeat={Infinity}
                         />
-
-                    </h1>
+                    </div>
                     <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
                         I&apos;m a software developer experienced in architecting scalable, cutting-edge web solutions
                     </p>
                     <div>
-                        <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-300 to-orange-600 text-white'>Contact</button>
+                        <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-300 to-orange-600 text-white'>
+                            <a href="/contact">
+                                Contact
+                            </a>
+                        </button>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border mt-3 border-white'>Download Resume</button>
                     </div>
                 </div>
-                <div className='col-span-5 place-self-center mt-5 lg:mt-0'>
+                <div className='col-span-4  place-self-center mt-5 lg:mt-0'>
                     <div className='rounded-full bg-blue-400 w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]'>
                         {/* <Image
                             src="/public/images/headshot.jpeg"
@@ -51,7 +56,7 @@ const HeroSection = () => {
 
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
