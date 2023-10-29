@@ -10,10 +10,10 @@ const Navbar = () => {
                 <Logo />
             </div>
             <div className='flex'>
-                <a className='mr-5'>
+                <a href='https://github.com/jamesdarrigo29' className='mr-5'>
                     <AiFillGithub style={{ fontSize: '30px' }} />
                 </a>
-                <a>
+                <a href='https://linkedin.com/in/jamesdarrigo29'>
                     <FaLinkedin style={{ fontSize: '30px' }} />
                 </a>
             </div>
